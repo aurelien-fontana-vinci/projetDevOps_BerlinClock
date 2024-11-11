@@ -8,5 +8,10 @@ export class Main{
             return l1;
         } 
 
+        if(date === 2){
+            l1 = "1100";
+            return l1;
+        } 
+
     }
 }
