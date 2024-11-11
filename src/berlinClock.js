@@ -130,7 +130,7 @@ export class Main{
         if (seconde%2 === 0){
             l5 = "1";
             return l5;
-        }
+        }else return l5;
 
     }
 }
