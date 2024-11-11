@@ -105,22 +105,22 @@ export class Main{
             return l3;
         }
 
-        if (hour === 5){
+        if (hour >= 5 && hour < 10){
             l4 = "1000";
             return l4;
         }
 
-        if (hour === 10){
+        if (hour >= 10 && hour < 15){
             l4 = "1100";
             return l4;
         }
 
-        if (hour === 15){
+        if (hour >= 15 && hour < 20){
             l4 = "1110";
             return l4;
         }
 
-        if (hour === 20){
+        if (hour >= 20){
             l4 = "1111";
             return l4;
         }
