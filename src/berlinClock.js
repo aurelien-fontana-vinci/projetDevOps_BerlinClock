@@ -120,5 +120,10 @@ export class Main{
             return l4;
         }
 
+        if (hour === 20){
+            l4 = "1111";
+            return l4;
+        }
+
     }
 }
