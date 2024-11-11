@@ -89,5 +89,10 @@ export class Main{
             return l3;
         }
 
+        if (hour === 2){
+            l3 = "1100";
+            return l3;
+        }
+
     }
 }

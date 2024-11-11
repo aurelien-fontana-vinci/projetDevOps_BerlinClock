@@ -200,5 +200,12 @@ describe("berlinClock function should return time", function (){
         expect(result).toBe("1000");
     });
 
+    it("Test hour 2",function (){
+        const date = new Date(0,0,0,2,0,0);
+        const result = main.berlinClock(date);
+
+        expect(result).toBe("1100");
+    });
+
 
 })
