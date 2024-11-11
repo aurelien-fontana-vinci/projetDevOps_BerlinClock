@@ -26,4 +26,12 @@ describe("berlinClock function should return time", function (){
         expect(result).toBe("1110");
     });
 
+    it("Test minute 4",function (){
+        let main = new Main();
+
+        const result = main.berlinClock(4);
+
+        expect(result).toBe("1111");
+    });
+
 })
