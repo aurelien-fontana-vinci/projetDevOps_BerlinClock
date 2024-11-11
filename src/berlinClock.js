@@ -3,8 +3,10 @@ export class Main{
     berlinClock(date){
         var l1 = "0000";
         var l2 = "00000000000";
+        var l3 = "0000";
         
         var minute = date.getMinutes();
+        var hour = date.getHours();
         
         if(minute%10 === 1 || minute%10 === 6){
             l1 = "1000";
@@ -79,6 +81,12 @@ export class Main{
         if (minute === 55){
             l2 = "11111111111";
             return l2;
+        }
+
+
+        if (hour === 1){
+            l3 = "1000";
+            return l3;
         }
 
     }
