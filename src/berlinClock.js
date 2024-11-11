@@ -3,7 +3,7 @@ export class Main{
     berlinClock(date){
         var l1 = "0000";
 
-        if(date%10 === 1 || date === 6){
+        if(date%10 === 1 || date%10 === 6){
             l1 = "1000";
             return l1;
         } 
