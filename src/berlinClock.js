@@ -5,9 +5,11 @@ export class Main{
         var l2 = "00000000000";
         var l3 = "0000";
         var l4 = "0000";
+        var l5 = "0";
         
         var minute = date.getMinutes();
         var hour = date.getHours();
+        var seconde = date.getSeconds();
         
         if(minute%10 === 1 || minute%10 === 6){
             l1 = "1000";
@@ -123,6 +125,11 @@ export class Main{
         if (hour >= 20){
             l4 = "1111";
             return l4;
+        }
+
+        if (seconde%2 === 0){
+            l5 = "1";
+            return l5;
         }
 
     }
