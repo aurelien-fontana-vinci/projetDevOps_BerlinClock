@@ -115,5 +115,10 @@ export class Main{
             return l4;
         }
 
+        if (hour === 15){
+            l4 = "1110";
+            return l4;
+        }
+
     }
 }
