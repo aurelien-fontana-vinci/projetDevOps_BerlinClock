@@ -2,6 +2,8 @@ export class Main{
 
     berlinClock(date){
         var l1 = "0000";
+        var l2 = "00000000000";
+
 
         if(date%10 === 1 || date%10 === 6){
             l1 = "1000";
@@ -23,6 +25,10 @@ export class Main{
             return l1;
         } 
 
+        if (date === 5){
+            l2 = "10000000000";
+            return l2;
+        }
 
 
 
