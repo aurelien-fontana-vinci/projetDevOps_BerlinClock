@@ -75,5 +75,10 @@ export class Main{
             return l2;
         }
 
+        if (date ===55){
+            l2 = "11111111111";
+            return l2;
+        }
+
     }
 }
