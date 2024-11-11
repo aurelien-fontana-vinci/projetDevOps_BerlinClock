@@ -138,5 +138,13 @@ describe("berlinClock function should return time", function (){
         expect(result).toBe("10000000000");
     });
 
+    it("Test minute 10",function (){
+        let main = new Main();
+
+        const result = main.berlinClock(10);
+
+        expect(result).toBe("11000000000");
+    });
+
 
 })
