@@ -84,22 +84,22 @@ export class Main{
         }
 
 
-        if (hour%10 === 1 || hour === 6){
+        if (hour%10 === 1 || hour%10 === 6){
             l3 = "1000";
             return l3;
         }
 
-        if (hour === 2 || hour === 7){
+        if (hour%10 === 2 || hour%10 === 7){
             l3 = "1100";
             return l3;
         }
 
-        if (hour === 3 || hour === 8){
+        if (hour%10 === 3 || hour%10 === 8){
             l3 = "1110";
             return l3;
         }
 
-        if (hour === 4 || hour === 9){
+        if (hour%10 === 4 || hour%10 === 9){
             l3 = "1111";
             return l3;
         }
