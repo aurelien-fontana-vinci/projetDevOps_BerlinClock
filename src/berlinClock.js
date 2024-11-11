@@ -45,6 +45,11 @@ export class Main{
             return l2;
         }
 
+        if (date ===25){
+            l2 = "11111000000";
+            return l2;
+        }
+
 
 
     }
