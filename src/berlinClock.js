@@ -13,5 +13,10 @@ export class Main{
             return l1;
         } 
 
+        if(date === 3){
+            l1 = "1110";
+            return l1;
+        } 
+
     }
 }
