@@ -2,10 +2,12 @@ import {Main} from '../src/berlinClock.js';
 
 describe("berlinClock function should return time", function (){
 
+
     it("Test minute 1",function (){
         let main = new Main();
 
-        const result = main.berlinClock(1);
+        const date = new Date(0,0,0,0,1,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1000");
     });
@@ -13,7 +15,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 2",function (){
         let main = new Main();
 
-        const result = main.berlinClock(2);
+        const date = new Date(0,0,0,0,2,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1100");
     });
@@ -21,7 +24,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 3",function (){
         let main = new Main();
 
-        const result = main.berlinClock(3);
+        const date = new Date(0,0,0,0,3,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1110");
     });
@@ -29,7 +33,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 4",function (){
         let main = new Main();
 
-        const result = main.berlinClock(4);
+        const date = new Date(0,0,0,0,4,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1111");
     });
@@ -37,7 +42,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 6",function (){
         let main = new Main();
 
-        const result = main.berlinClock(6);
+        const date = new Date(0,0,0,0,6,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1000");
     });
@@ -45,7 +51,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 7",function (){
         let main = new Main();
 
-        const result = main.berlinClock(7);
+        const date = new Date(0,0,0,0,7,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1100");
     });
@@ -53,7 +60,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 8",function (){
         let main = new Main();
 
-        const result = main.berlinClock(8);
+        const date = new Date(0,0,0,0,8,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1110");
     });
@@ -61,7 +69,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 9",function (){
         let main = new Main();
 
-        const result = main.berlinClock(9);
+        const date = new Date(0,0,0,0,9,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1111");
     });
@@ -69,7 +78,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 11",function (){
         let main = new Main();
 
-        const result = main.berlinClock(11);
+        const date = new Date(0,0,0,0,11,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1000");
     });
@@ -77,7 +87,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 12",function (){
         let main = new Main();
 
-        const result = main.berlinClock(12);
+        const date = new Date(0,0,0,0,12,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1100");
     });
@@ -85,7 +96,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 13",function (){
         let main = new Main();
 
-        const result = main.berlinClock(13);
+        const date = new Date(0,0,0,0,13,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1110");
     });
@@ -93,7 +105,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 14",function (){
         let main = new Main();
 
-        const result = main.berlinClock(14);
+        const date = new Date(0,0,0,0,14,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1111");
     });
@@ -101,7 +114,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 16",function (){
         let main = new Main();
 
-        const result = main.berlinClock(16);
+        const date = new Date(0,0,0,0,16,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1000");
     });
@@ -109,7 +123,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 17",function (){
         let main = new Main();
 
-        const result = main.berlinClock(17);
+        const date = new Date(0,0,0,0,17,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1100");
     });
@@ -117,7 +132,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 18",function (){
         let main = new Main();
 
-        const result = main.berlinClock(18);
+        const date = new Date(0,0,0,0,18,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1110");
     });
@@ -125,7 +141,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 19",function (){
         let main = new Main();
 
-        const result = main.berlinClock(19);
+        const date = new Date(0,0,0,0,19,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("1111");
     });
@@ -133,7 +150,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 5",function (){
         let main = new Main();
 
-        const result = main.berlinClock(5);
+        const date = new Date(0,0,0,0,5,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("10000000000");
     });
@@ -141,7 +159,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 10",function (){
         let main = new Main();
 
-        const result = main.berlinClock(10);
+        const date = new Date(0,0,0,0,10,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11000000000");
     });
@@ -149,7 +168,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 15",function (){
         let main = new Main();
 
-        const result = main.berlinClock(15);
+        const date = new Date(0,0,0,0,15,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11100000000");
     });
@@ -157,7 +177,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 20",function (){
         let main = new Main();
 
-        const result = main.berlinClock(20);
+        const date = new Date(0,0,0,0,20,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11110000000");
     });
@@ -165,7 +186,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 25",function (){
         let main = new Main();
 
-        const result = main.berlinClock(25);
+        const date = new Date(0,0,0,0,25,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11111000000");
     });
@@ -173,7 +195,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 30",function (){
         let main = new Main();
 
-        const result = main.berlinClock(30);
+        const date = new Date(0,0,0,0,30,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11111100000");
     });
@@ -181,7 +204,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 35",function (){
         let main = new Main();
 
-        const result = main.berlinClock(35);
+        const date = new Date(0,0,0,0,35,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11111110000");
     });
@@ -189,7 +213,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 40",function (){
         let main = new Main();
 
-        const result = main.berlinClock(40);
+        const date = new Date(0,0,0,0,40,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11111111000");
     });
@@ -197,7 +222,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 45",function (){
         let main = new Main();
 
-        const result = main.berlinClock(45);
+        const date = new Date(0,0,0,0,45,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11111111100");
     });
@@ -205,7 +231,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 50",function (){
         let main = new Main();
 
-        const result = main.berlinClock(50);
+        const date = new Date(0,0,0,0,50,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11111111110");
     });
@@ -213,7 +240,8 @@ describe("berlinClock function should return time", function (){
     it("Test minute 55",function (){
         let main = new Main();
 
-        const result = main.berlinClock(55);
+        const date = new Date(0,0,0,0,55,0);
+        const result = main.berlinClock(date);
 
         expect(result).toBe("11111111111");
     });
