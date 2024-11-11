@@ -18,7 +18,7 @@ export class Main{
             return l1;
         } 
 
-        if(date === 4){
+        if(date === 4 || date === 9){
             l1 = "1111";
             return l1;
         } 
