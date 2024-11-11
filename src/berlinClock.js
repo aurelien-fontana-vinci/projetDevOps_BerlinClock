@@ -8,7 +8,7 @@ export class Main{
             return l1;
         } 
 
-        if(date%10 === 2 || date === 7){
+        if(date%10 === 2 || date%10 === 7){
             l1 = "1100";
             return l1;
         } 
