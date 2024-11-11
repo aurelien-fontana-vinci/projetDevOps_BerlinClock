@@ -84,7 +84,7 @@ export class Main{
         }
 
 
-        if (hour === 1 || hour === 6){
+        if (hour%10 === 1 || hour === 6){
             l3 = "1000";
             return l3;
         }
