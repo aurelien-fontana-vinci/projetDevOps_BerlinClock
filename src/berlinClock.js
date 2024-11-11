@@ -4,6 +4,7 @@ export class Main{
         var l1 = "0000";
         var l2 = "00000000000";
         var l3 = "0000";
+        var l4 = "0000";
         
         var minute = date.getMinutes();
         var hour = date.getHours();
@@ -102,6 +103,11 @@ export class Main{
         if (hour%10 === 4 || hour%10 === 9){
             l3 = "1111";
             return l3;
+        }
+
+        if (hour === 5){
+            l4 = "1000";
+            return l4;
         }
 
     }
