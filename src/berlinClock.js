@@ -13,7 +13,7 @@ export class Main{
             return l1;
         } 
 
-        if(date === 3){
+        if(date === 3 || date === 8){
             l1 = "1110";
             return l1;
         } 
