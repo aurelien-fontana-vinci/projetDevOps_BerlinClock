@@ -1,132 +1,151 @@
 export class Main{
 
-    berlinClock(date){
-        var l1 = "0000";
-        var l2 = "00000000000";
-        var l3 = "0000";
-        var l4 = "0000";
-        var l5 = "0";
+    berlinClock(date) {
+        const minute = date.getMinutes();
+        const hour = date.getHours();
+        const seconde = date.getSeconds();
         
-        var minute = date.getMinutes();
-        var hour = date.getHours();
-        var seconde = date.getSeconds();
+        const l1 = this.ligneMinutesSimples(minute);
+        const l2 = this.ligneBlocs5Minutes(minute);
+        const l3 = this.ligneHeuresSimples(hour);
+        const l4 = this.ligneBlocs5Heures(hour);
+        const l5 = this.lampeSecondes(seconde);
         
+        return l1 + l2 + l3 + l4 + l5;
+      }
+
+    ligneMinutesSimples(minute) {
+        let l1 = "0000"
         if(minute%10 === 1 || minute%10 === 6){
             l1 = "1000";
-            return l1;
         } 
 
         if(minute%10 === 2 || minute%10 === 7){
             l1 = "1100";
-            return l1;
         } 
 
         if(minute%10 === 3 || minute%10 === 8){
             l1 = "1110";
-            return l1;
         } 
 
         if(minute%10 === 4 || minute%10 === 9){
             l1 = "1111";
-            return l1;
+        }
+        return l1;
+    }
+
+    ligneMinutesSimples(minute) {
+        let l1 = "0000"
+        if(minute%10 === 1 || minute%10 === 6){
+            l1 = "1000";
         } 
 
-        if (minute === 5){
-            l2 = "10000000000";
-            return l2;
+        if(minute%10 === 2 || minute%10 === 7){
+            l1 = "1100";
+        } 
+
+        if(minute%10 === 3 || minute%10 === 8){
+            l1 = "1110";
+        } 
+
+        if(minute%10 === 4 || minute%10 === 9){
+            l1 = "1111";
         }
+        return l1;
+    }
+  
+    ligneBlocs5Minutes(minute) {
+      let l2 = '00000000000';
 
-        if (minute ===10){
-            l2 = "11000000000";
-            return l2;
-        }
+      if (minute === 5){
+        l2 = "10000000000";
+    }
 
-        if (minute ===15){
-            l2 = "11100000000";
-            return l2;
-        }
+    if (minute ===10){
+        l2 = "11000000000";
+    }
 
-        if (minute ===20){
-            l2 = "11110000000";
-            return l2;
-        }
+    if (minute ===15){
+        l2 = "11100000000";
+    }
 
-        if (minute ===25){
-            l2 = "11111000000";
-            return l2;
-        }
+    if (minute ===20){
+        l2 = "11110000000";
+    }
 
-        if (minute ===30){
-            l2 = "11111100000";
-            return l2;
-        }
+    if (minute ===25){
+        l2 = "11111000000";
+    }
 
-        if (minute ===35){
-            l2 = "11111110000";
-            return l2;
-        }
+    if (minute ===30){
+        l2 = "11111100000";
+    }
 
-        if (minute ===40){
-            l2 = "11111111000";
-            return l2;
-        }
+    if (minute ===35){
+        l2 = "11111110000";
+    }
 
-        if (minute ===45){
-            l2 = "11111111100";
-            return l2;
-        }
+    if (minute ===40){
+        l2 = "11111111000";
+    }
 
-        if (minute ===50){
-            l2 = "11111111110";
-            return l2;
-        }
+    if (minute ===45){
+        l2 = "11111111100";
+    }
 
-        if (minute === 55){
-            l2 = "11111111111";
-            return l2;
-        }
+    if (minute ===50){
+        l2 = "11111111110";
+    }
 
+    if (minute === 55){
+        l2 = "11111111111";
+    }
+    return l2;
+    }
+  
+    ligneHeuresSimples(hour) {
+      let l3 = '0000';
 
-        if (hour%10 === 1 || hour%10 === 6){
-            l3 = "1000";
-            return l3;
-        }
+      if (hour%10 === 1 || hour%10 === 6){
+        l3 = "1000";
+    }
 
-        if (hour%10 === 2 || hour%10 === 7){
-            l3 = "1100";
-            return l3;
-        }
+    if (hour%10 === 2 || hour%10 === 7){
+        l3 = "1100";
+    }
 
-        if (hour%10 === 3 || hour%10 === 8){
-            l3 = "1110";
-            return l3;
-        }
+    if (hour%10 === 3 || hour%10 === 8){
+        l3 = "1110";
+    }
 
-        if (hour%10 === 4 || hour%10 === 9){
-            l3 = "1111";
-            return l3;
-        }
+    if (hour%10 === 4 || hour%10 === 9){
+        l3 = "1111";
+    }
+      return l3;
+    }
+  
+    ligneBlocs5Heures(hour) {
+      let l4 = '0000';
+      if (hour >= 5 && hour < 10){
+        l4 = "1000";
+    }
 
-        if (hour >= 5 && hour < 10){
-            l4 = "1000";
-            return l4;
-        }
+    if (hour >= 10 && hour < 15){
+        l4 = "1100";
+    }
 
-        if (hour >= 10 && hour < 15){
-            l4 = "1100";
-            return l4;
-        }
+    if (hour >= 15 && hour < 20){
+        l4 = "1110";
+    }
 
-        if (hour >= 15 && hour < 20){
-            l4 = "1110";
-            return l4;
-        }
-
-        if (hour >= 20){
-            l4 = "1111";
-            return l4;
-        }
-
+    if (hour >= 20){
+        l4 = "1111";
+    }
+      return l4;
+    }
+  
+    lampeSecondes(seconde) {
+        let l5 ="0";
         if (seconde%2 === 0){
             l5 = "1";
             return l5;
