@@ -298,4 +298,11 @@ describe("berlinClock function should return time", function (){
         expect(result).toBe("000000000000000000000000");
     });
 
+    it("Test completed clock",function (){
+        const date = new Date(0,0,0,7,27,32);
+        const result = main.berlinClock(date);
+
+        expect(result).toBe("110000000000000110010001");
+    });
+
 })
