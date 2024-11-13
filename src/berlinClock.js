@@ -3,38 +3,19 @@ export class Main{
     berlinClock(date) {
         const minute = date.getMinutes();
         const hour = date.getHours();
-        const seconde = date.getSeconds();
+        const second = date.getSeconds();
         
-        const l1 = this.ligneMinutesSimples(minute);
-        const l2 = this.ligneBlocs5Minutes(minute);
-        const l3 = this.ligneHeuresSimples(hour);
-        const l4 = this.ligneBlocs5Heures(hour);
-        const l5 = this.lampeSecondes(seconde);
+        const l1 = this.simpleMinutesLine(minute);
+        const l2 = this.block5MinutesLine(minute);
+        const l3 = this.simpleHoursLine(hour);
+        const l4 = this.block5Hours(hour);
+        const l5 = this.secondsLine(second);
         
         return l1 + l2 + l3 + l4 + l5;
       }
 
-    ligneMinutesSimples(minute) {
-        let l1 = "0000"
-        if(minute%10 === 1 || minute%10 === 6){
-            l1 = "1000";
-        } 
 
-        if(minute%10 === 2 || minute%10 === 7){
-            l1 = "1100";
-        } 
-
-        if(minute%10 === 3 || minute%10 === 8){
-            l1 = "1110";
-        } 
-
-        if(minute%10 === 4 || minute%10 === 9){
-            l1 = "1111";
-        }
-        return l1;
-    }
-
-    ligneMinutesSimples(minute) {
+    simpleMinutesLine(minute) {
         let l1 = "0000"
         if(minute%10 === 1 || minute%10 === 6){
             l1 = "1000";
@@ -54,7 +35,7 @@ export class Main{
         return l1;
     }
   
-    ligneBlocs5Minutes(minute) {
+    block5MinutesLine(minute) {
       let l2 = '00000000000';
 
       if (minute === 5){
@@ -103,7 +84,7 @@ export class Main{
     return l2;
     }
   
-    ligneHeuresSimples(hour) {
+    simpleHoursLine(hour) {
       let l3 = '0000';
 
       if (hour%10 === 1 || hour%10 === 6){
@@ -124,7 +105,7 @@ export class Main{
       return l3;
     }
   
-    ligneBlocs5Heures(hour) {
+    block5Hours(hour) {
       let l4 = '0000';
       if (hour >= 5 && hour < 10){
         l4 = "1000";
@@ -144,7 +125,7 @@ export class Main{
       return l4;
     }
   
-    lampeSecondes(seconde) {
+    secondsLine(seconde) {
         let l5 ="0";
         if (seconde%2 === 0){
             l5 = "1";

@@ -284,14 +284,14 @@ describe("berlinClock function should return time", function (){
         expect(result).toBe("000000000000000000011111");
     });
 
-    it("Test seconde pair",function (){
+    it("Test second even",function (){
         const date = new Date(0,0,0,0,0,0);
         const result = main.berlinClock(date);
 
         expect(result).toBe("000000000000000000000001");
     });
 
-    it("Test seconde impair",function (){
+    it("Test second odd",function (){
         const date = new Date(0,0,0,0,0,1);
         const result = main.berlinClock(date);
 
